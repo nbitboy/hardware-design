@@ -1,0 +1,44 @@
+NET "FNH" CLOCK_DEDICATED_ROUTE = FALSE;
+
+# FPGA process 
+NET "LOG[0]" LOC = P82;
+NET "LOG[1]" LOC = P81;
+NET "LOG[2]" LOC = P80;
+NET "LOG[3]" LOC = P79;
+NET "LOG[4]" LOC = P78;
+NET "LOG[5]" LOC = P75;
+NET "LOG[6]" LOC = P74;
+NET "LOG[7]" LOC = P67;
+# Generate clock
+NET "CLK" LOC = P123;
+
+# Button input
+NET "BTIN[0]" LOC = P47;
+NET "BTIN[1]" LOC = P48;
+NET "BTIN[2]" LOC = P51;
+NET "BTIN[3]" LOC = P55;
+
+# Arduino control servo
+# FPGA -> Arduino
+NET "MODE[0]" LOC = P124;
+NET "MODE[1]" LOC = P127;
+NET "MODE[2]" LOC = P132;
+NET "MODE[3]" LOC = P134;
+# Arduino -> FPGA
+NET "RDY[0]" LOC = P126;
+NET "RDY[1]" LOC = P131;
+NET "RDY[2]" LOC = P133;
+NET "RDY[3]" LOC = P137;
+NET "STA" LOC = P139;
+NET "FNH" LOC = P141;
+
+# ESP8266 Blynk control
+# ESP8266 -> FPGA
+NET "RX" LOC = P5;
+# FPGA -> ESP8266
+NET "TX" LOC = P7;
+
+# PlanAhead Generated physical constraints 
+
+
+

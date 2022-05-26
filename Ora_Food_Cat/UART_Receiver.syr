@@ -1,0 +1,574 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: UART_Receiver.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Parsing
+  3) HDL Elaboration
+  4) HDL Synthesis
+       4.1) HDL Synthesis Report
+  5) Advanced HDL Synthesis
+       5.1) Advanced HDL Synthesis Report
+  6) Low Level Synthesis
+  7) Partition Report
+  8) Design Summary
+       8.1) Primitive and Black Box Usage
+       8.2) Device utilization summary
+       8.3) Partition Resource Summary
+       8.4) Timing Report
+            8.4.1) Clock Information
+            8.4.2) Asynchronous Control Signals Information
+            8.4.3) Timing Summary
+            8.4.4) Timing Details
+            8.4.5) Cross Clock Domains Report
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "UART_Receiver.prj"
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "UART_Receiver"
+Output Format                      : NGC
+Target Device                      : xc6slx9-3-tqg144
+
+---- Source Options
+Top Module Name                    : UART_Receiver
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Shift Register Extraction          : YES
+ROM Style                          : Auto
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Shift Register Minimum Size        : 2
+Use DSP Block                      : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+LUT Combining                      : Auto
+Reduce Control Sets                : Auto
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 16
+Register Duplication               : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Auto
+Use Synchronous Set                : Auto
+Use Synchronous Reset              : Auto
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Power Reduction                    : NO
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+DSP48 Utilization Ratio            : 100
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Parsing                                  *
+=========================================================================
+Parsing VHDL file "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\T_FLIPFLOP.vhd" into library work
+Parsing entity <T_FLIPFLOP>.
+Parsing architecture <Behavioral> of entity <t_flipflop>.
+Parsing VHDL file "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\DIV20M_160K.vhd" into library work
+Parsing entity <DIV20M_160K>.
+Parsing architecture <Behavioral> of entity <div20m_160k>.
+Parsing VHDL file "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\Counter_0_7.vhd" into library work
+Parsing entity <Counter_0_7>.
+Parsing architecture <Behavioral> of entity <counter_0_7>.
+Parsing VHDL file "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\Counter_0_15.vhd" into library work
+Parsing entity <Counter_0_15>.
+Parsing architecture <Behavioral> of entity <counter_0_15>.
+Parsing VHDL file "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.vhd" into library work
+Parsing entity <UART_Receiver>.
+Parsing architecture <Behavioral> of entity <uart_receiver>.
+
+=========================================================================
+*                            HDL Elaboration                            *
+=========================================================================
+
+Elaborating entity <UART_Receiver> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <T_FLIPFLOP> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <DIV20M_160K> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_7> (architecture <Behavioral>) from library <work>.
+
+Elaborating entity <Counter_0_15> (architecture <Behavioral>) from library <work>.
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Synthesizing Unit <UART_Receiver>.
+    Related source file is "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.vhd".
+INFO:Xst:3210 - "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.vhd" line 95: Output port <S> of the instance <C71> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.vhd" line 105: Output port <S> of the instance <C15> is unconnected or connected to loadless signal.
+INFO:Xst:3210 - "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.vhd" line 107: Output port <S> of the instance <C72> is unconnected or connected to loadless signal.
+    Found 1-bit register for signal <C15RESETEN>.
+    Found 8-bit register for signal <SRGDATA>.
+    Summary:
+	inferred   9 D-type flip-flop(s).
+Unit <UART_Receiver> synthesized.
+
+Synthesizing Unit <T_FLIPFLOP>.
+    Related source file is "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\T_FLIPFLOP.vhd".
+    Found 1-bit register for signal <tmp>.
+    Summary:
+	inferred   1 D-type flip-flop(s).
+Unit <T_FLIPFLOP> synthesized.
+
+Synthesizing Unit <DIV20M_160K>.
+    Related source file is "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\DIV20M_160K.vhd".
+    Found 1-bit register for signal <tmp>.
+    Found 32-bit register for signal <count>.
+    Found 32-bit adder for signal <count[31]_GND_5_o_add_0_OUT> created at line 47.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred  33 D-type flip-flop(s).
+Unit <DIV20M_160K> synthesized.
+
+Synthesizing Unit <Counter_0_7>.
+    Related source file is "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\Counter_0_7.vhd".
+    Found 1-bit register for signal <C>.
+    Found 3-bit register for signal <count>.
+    Found 3-bit adder for signal <count[2]_GND_7_o_add_0_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   4 D-type flip-flop(s).
+Unit <Counter_0_7> synthesized.
+
+Synthesizing Unit <Counter_0_15>.
+    Related source file is "D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\Counter_0_15.vhd".
+    Found 1-bit register for signal <C>.
+    Found 4-bit register for signal <count>.
+    Found 4-bit adder for signal <count[3]_GND_8_o_add_0_OUT> created at line 51.
+    Summary:
+	inferred   1 Adder/Subtractor(s).
+	inferred   5 D-type flip-flop(s).
+Unit <Counter_0_15> synthesized.
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 4
+ 3-bit adder                                           : 2
+ 32-bit adder                                          : 1
+ 4-bit adder                                           : 1
+# Registers                                            : 11
+ 1-bit register                                        : 6
+ 3-bit register                                        : 2
+ 32-bit register                                       : 1
+ 4-bit register                                        : 1
+ 8-bit register                                        : 1
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <Counter_0_15>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_0_15> synthesized (advanced).
+
+Synthesizing (advanced) Unit <Counter_0_7>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <Counter_0_7> synthesized (advanced).
+
+Synthesizing (advanced) Unit <DIV20M_160K>.
+The following registers are absorbed into counter <count>: 1 register on signal <count>.
+Unit <DIV20M_160K> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Counters                                             : 4
+ 3-bit up counter                                      : 2
+ 32-bit up counter                                     : 1
+ 4-bit up counter                                      : 1
+# Registers                                            : 14
+ Flip-Flops                                            : 14
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <UART_Receiver> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block UART_Receiver, actual ratio is 1.
+FlipFlop SRGDATA_7 has been replicated 1 time(s) to handle iob=true attribute.
+
+Final Macro Processing ...
+
+Processing Unit <UART_Receiver> :
+	Found 2-bit shift register for signal <SRGDATA_6>.
+Unit <UART_Receiver> processed.
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 55
+ Flip-Flops                                            : 55
+# Shift Registers                                      : 1
+ 2-bit shift register                                  : 1
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Design Summary                             *
+=========================================================================
+
+Top Level Output File Name         : UART_Receiver.ngc
+
+Primitive and Black Box Usage:
+------------------------------
+# BELS                             : 156
+#      GND                         : 1
+#      INV                         : 5
+#      LUT1                        : 31
+#      LUT2                        : 39
+#      LUT3                        : 6
+#      LUT4                        : 2
+#      LUT6                        : 8
+#      MUXCY                       : 31
+#      VCC                         : 1
+#      XORCY                       : 32
+# FlipFlops/Latches                : 56
+#      FD                          : 44
+#      FDC                         : 9
+#      FDC_1                       : 1
+#      FDE                         : 1
+#      FDP                         : 1
+# Shift Registers                  : 1
+#      SRLC16E                     : 1
+# Clock Buffers                    : 1
+#      BUFGP                       : 1
+# IO Buffers                       : 9
+#      IBUF                        : 1
+#      OBUF                        : 8
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 6slx9tqg144-3 
+
+
+Slice Logic Utilization: 
+ Number of Slice Registers:              55  out of  11440     0%  
+ Number of Slice LUTs:                   92  out of   5720     1%  
+    Number used as Logic:                91  out of   5720     1%  
+    Number used as Memory:                1  out of   1440     0%  
+       Number used as SRL:                1
+
+Slice Logic Distribution: 
+ Number of LUT Flip Flop pairs used:     98
+   Number with an unused Flip Flop:      43  out of     98    43%  
+   Number with an unused LUT:             6  out of     98     6%  
+   Number of fully used LUT-FF pairs:    49  out of     98    50%  
+   Number of unique control sets:         8
+
+IO Utilization: 
+ Number of IOs:                          13
+ Number of bonded IOBs:                  10  out of    102     9%  
+    IOB Flip Flops/Latches:               1
+
+Specific Feature Utilization:
+ Number of BUFG/BUFGCTRLs:                1  out of     16     6%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+Timing Report
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+C15/C                              | NONE(SRGDATA_0)        | 13    |
+C71/C                              | NONE(C15RESETEN)       | 1     |
+TFFCLK(TFFCLK1:O)                  | NONE(*)(TFF/tmp)       | 1     |
+C71CLK_C15CLK(C71CLK_C15CLK1:O)    | NONE(*)(C15/C)         | 9     |
+CLK                                | BUFGP                  | 33    |
+-----------------------------------+------------------------+-------+
+(*) These 2 clock signal(s) are generated by combinatorial logic,
+and XST is not able to identify which are the primary clock signals.
+Please use the CLOCK_SIGNAL constraint to specify the clock signal(s) generated by combinatorial logic.
+INFO:Xst:2169 - HDL ADVISOR - Some clock signals were not automatically buffered by XST with BUFG/BUFR resources. Please use the buffer_type constraint in order to insert these buffers to the clock signals to help prevent skew problems.
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -3
+
+   Minimum period: 4.164ns (Maximum Frequency: 240.136MHz)
+   Minimum input arrival time before clock: 1.974ns
+   Maximum output required time after clock: 3.634ns
+   Maximum combinational path delay: No path found
+
+Timing Details:
+---------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C15/C'
+  Clock period: 2.016ns (frequency: 495.933MHz)
+  Total number of paths / destination ports: 20 / 15
+-------------------------------------------------------------------------
+Delay:               2.016ns (Levels of Logic = 1)
+  Source:            C72/count_0 (FF)
+  Destination:       C72/count_0 (FF)
+  Source Clock:      C15/C rising
+  Destination Clock: C15/C rising
+
+  Data Path: C72/count_0 to C72/count_0
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC:C->Q              4   0.447   0.683  C72/count_0 (C72/count_0)
+     INV:I->O              1   0.206   0.579  C72/Mcount_count_xor<0>11_INV_0 (Result<0>1)
+     FDC:D                     0.102          C72/count_0
+    ----------------------------------------
+    Total                      2.016ns (0.755ns logic, 1.261ns route)
+                                       (37.4% logic, 62.6% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'TFFCLK'
+  Clock period: 1.984ns (frequency: 504.007MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               1.984ns (Levels of Logic = 1)
+  Source:            TFF/tmp (FF)
+  Destination:       TFF/tmp (FF)
+  Source Clock:      TFFCLK falling
+  Destination Clock: TFFCLK falling
+
+  Data Path: TFF/tmp to TFF/tmp
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDC_1:C->Q            3   0.447   0.650  TFF/tmp (TFF/tmp)
+     INV:I->O              1   0.206   0.579  TFF/NOTQ1_INV_0 (TFFNOTQ)
+     FDC_1:D                   0.102          TFF/tmp
+    ----------------------------------------
+    Total                      1.984ns (0.755ns logic, 1.229ns route)
+                                       (38.1% logic, 61.9% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'C71CLK_C15CLK'
+  Clock period: 2.515ns (frequency: 397.575MHz)
+  Total number of paths / destination ports: 28 / 14
+-------------------------------------------------------------------------
+Delay:               2.515ns (Levels of Logic = 1)
+  Source:            C71/C (FF)
+  Destination:       C15/C (FF)
+  Source Clock:      C71CLK_C15CLK rising
+  Destination Clock: C71CLK_C15CLK rising
+
+  Data Path: C71/C to C15/C
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.721  C71/C (C71/C)
+     LUT2:I0->O            5   0.203   0.714  C15R1 (C15R)
+     FDC:CLR                   0.430          C15/C
+    ----------------------------------------
+    Total                      2.515ns (1.080ns logic, 1.435ns route)
+                                       (42.9% logic, 57.1% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 4.164ns (frequency: 240.136MHz)
+  Total number of paths / destination ports: 1586 / 33
+-------------------------------------------------------------------------
+Delay:               4.164ns (Levels of Logic = 3)
+  Source:            DIV/count_25 (FF)
+  Destination:       DIV/count_1 (FF)
+  Source Clock:      CLK rising
+  Destination Clock: CLK rising
+
+  Data Path: DIV/count_25 to DIV/count_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FD:C->Q               2   0.447   0.981  DIV/count_25 (DIV/count_25)
+     LUT6:I0->O            3   0.203   0.995  DIV/GND_5_o_count[31]_equal_2_o<31>5 (DIV/GND_5_o_count[31]_equal_2_o<31>4)
+     LUT6:I1->O           17   0.203   1.028  DIV/GND_5_o_count[31]_equal_2_o<31>7 (DIV/GND_5_o_count[31]_equal_2_o)
+     LUT2:I1->O            1   0.205   0.000  DIV/count_1_rstpot (DIV/count_1_rstpot)
+     FD:D                      0.102          DIV/count_1
+    ----------------------------------------
+    Total                      4.164ns (1.160ns logic, 3.004ns route)
+                                       (27.9% logic, 72.1% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'C15/C'
+  Total number of paths / destination ports: 2 / 2
+-------------------------------------------------------------------------
+Offset:              1.974ns (Levels of Logic = 1)
+  Source:            RX (PAD)
+  Destination:       SRGDATA_7_1 (FF)
+  Destination Clock: C15/C rising
+
+  Data Path: RX to SRGDATA_7_1
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             3   1.222   0.650  RX_IBUF (RX_IBUF)
+     FD:D                      0.102          SRGDATA_7_1
+    ----------------------------------------
+    Total                      1.974ns (1.324ns logic, 0.650ns route)
+                                       (67.1% logic, 32.9% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'C15/C'
+  Total number of paths / destination ports: 8 / 8
+-------------------------------------------------------------------------
+Offset:              3.634ns (Levels of Logic = 1)
+  Source:            SRGDATA_6 (FF)
+  Destination:       LOG<6> (PAD)
+  Source Clock:      C15/C rising
+
+  Data Path: SRGDATA_6 to LOG<6>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              2   0.447   0.616  SRGDATA_6 (SRGDATA_6)
+     OBUF:I->O                 2.571          LOG_6_OBUF (LOG<6>)
+    ----------------------------------------
+    Total                      3.634ns (3.018ns logic, 0.616ns route)
+                                       (83.0% logic, 17.0% route)
+
+=========================================================================
+
+Cross Clock Domains Report:
+--------------------------
+
+Clock to Setup on destination clock C15/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C15/C          |    2.016|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock C71/C
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C15/C          |    1.621|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock C71CLK_C15CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C71/C          |    2.376|         |         |         |
+C71CLK_C15CLK  |    2.515|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock CLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+CLK            |    4.164|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock TFFCLK
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+C15/C          |         |         |    1.621|         |
+TFFCLK         |         |         |    1.984|         |
+---------------+---------+---------+---------+---------+
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.59 secs
+ 
+--> 
+
+Total memory usage is 4486184 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    0 (   0 filtered)
+Number of infos    :    4 (   0 filtered)
+

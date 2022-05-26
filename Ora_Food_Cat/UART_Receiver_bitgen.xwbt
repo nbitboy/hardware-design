@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.ncd
+OUTFILE=D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat\UART_Receiver.bit
+FAMILY=Spartan6
+PART=xc6slx9-3tqg144
+WORKINGDIR=D:\ForME\0_Code\GitHub\hardware-design\Ora_Food_Cat
+LICENSE=WebPack
+USER_INFO=__0_0_0

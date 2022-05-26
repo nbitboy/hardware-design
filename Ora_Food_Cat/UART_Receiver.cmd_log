@@ -1,0 +1,65 @@
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+xst -intstyle ise -ifn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.xst" -ofn "D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/UART_Receiver.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc main.ucf -uc UART_Receiver.ucf -p xc6slx9-tqg144-3 UART_Receiver.ngc UART_Receiver.ngd  
+map -intstyle ise -p xc6slx9-tqg144-3 -w -logic_opt off -ol high -t 1 -xt 0 -register_duplication off -r 4 -global_opt off -mt off -ir off -pr off -lc off -power off -o UART_Receiver_map.ncd UART_Receiver.ngd UART_Receiver.pcf 
+par -w -intstyle ise -ol high -mt off UART_Receiver_map.ncd UART_Receiver.ncd UART_Receiver.pcf 
+trce -intstyle ise -v 3 -s 3 -n 3 -fastpaths -xml UART_Receiver.twx UART_Receiver.ncd -o UART_Receiver.twr UART_Receiver.pcf -ucf main.ucf -ucf UART_Receiver.ucf 
+bitgen -intstyle ise -f UART_Receiver.ut UART_Receiver.ncd 

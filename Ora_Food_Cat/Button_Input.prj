@@ -1,0 +1,4 @@
+vhdl work "Encoder_4_2.vhd"
+vhdl work "DIV20M_1K.vhd"
+vhdl work "Counter_0_20.vhd"
+vhdl work "Button_Input.vhd"

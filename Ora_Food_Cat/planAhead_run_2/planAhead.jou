@@ -1,0 +1,31 @@
+#-----------------------------------------------------------
+# PlanAhead v14.7
+# Build 321239 by xbuild on Fri Sep 27 19:31:35 MDT 2013
+# Start of session at: Mon May 23 02:58:25 2022
+# Process ID: 17740
+# Log file: D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/planAhead_run_2/planAhead.log
+# Journal file: D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/planAhead_run_2/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ForME/0_Code/GitHub/hardware-design/Ora_Food_Cat/pa.fromHdl.tcl
+update_compile_order -fileset sim_1
+startgroup
+set_property package_pin P45 [get_ports {BTIN[3]}]
+endgroup
+set_property package_pin "" [get_ports [list  {BTIN[2]}]]
+startgroup
+set_property package_pin P50 [get_ports {BTIN[3]}]
+endgroup
+startgroup
+set_property package_pin P45 [get_ports {BTIN[0]}]
+endgroup
+startgroup
+set_property package_pin P46 [get_ports {BTIN[1]}]
+endgroup
+startgroup
+set_property package_pin P47 [get_ports {BTIN[2]}]
+endgroup
+startgroup
+set_property package_pin P48 [get_ports {BTIN[3]}]
+endgroup
+save_constraints

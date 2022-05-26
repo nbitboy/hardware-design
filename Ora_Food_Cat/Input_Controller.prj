@@ -1,0 +1,4 @@
+vhdl work "T_FLIPFLOP.vhd"
+vhdl work "DIV20M_160K.vhd"
+vhdl work "Counter_0_7.vhd"
+vhdl work "Input_Controller.vhd"
